@@ -1,0 +1,16 @@
+{{>header}}
+
+{{#each news}}
+
+<div class="container" style="border: 1px black solid; padding:10px 50px; text-align:right; margin:10px auto">
+    <h3>{{this.title}}</h3>
+    <div class="card">
+        <div class="card-body">{{this.description}}</div>
+        <img class="card img" src="{{this.urlToImage}}" style="width :260px; margin:auto">
+    </div>
+
+</div>
+
+{{/each}}
+
+{{>footer}}
